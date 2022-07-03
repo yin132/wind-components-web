@@ -44,15 +44,15 @@
                         <label for="runwayNum">Runway Number (eg. 19)</label>
                     </div>
                     <div class="input-group mb-3">
-                        <input id="windDir" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="210" aria-label="WindDirection">
+                        <div class="form-floating">
+                            <input id="windDir" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="210" aria-label="WindDirection">
+                            <label for="windDir">3-Digit Direction</label>
+                        </div>
                         <span class="input-group-text">@</span>
-                        <input id="windStr" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="5" aria-label="WindStrength">
-                        <span class="input-group-text">KT</span>
-                    </div>
-                    <div class="mb-3">
-                        <p>
-                            input a 3-digit wind direction
-                        </p>
+                        <div class="form-floating">
+                            <input id="windStr" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="5" aria-label="WindStrength">
+                            <label for="windStr">Wind Strength</label>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <p id="inputWarning" style="color: #ff0000; visibility: hidden">
