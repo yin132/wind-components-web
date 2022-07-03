@@ -55,4 +55,16 @@ function readWind() {
     headWindElem.innerHTML = hwind;
     crossWindElem.innerHTML = xwind;
     inputWarning.style = "color: #ff0000; visibility: hidden";
+    
+    if (hwind > 25 || hwind < -5) {
+        headWindElem.style = "border: 2px; border-style: solid; border-color: red;";
+    } else {
+        headWindElem.style = "";
+    }
+
+    if (xwind > 8) {
+        crossWindElem.style = "border: 2px; border-style: solid; border-color: red;";
+    } else {
+        crossWindElem.style = "";
+    }
 }
