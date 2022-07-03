@@ -33,8 +33,8 @@ function readWind() {
 
     // read inputs
     try {
-        runway = parseFloat(runwayNumElem.value) * 10 / 180 * Math.PI;
-        windDir = parseFloat(windDirElem.value) / 180 * Math.PI;
+        runway = parseInt(runwayNumElem.value) * 10 / 180 * Math.PI;
+        windDir = parseInt(windDirElem.value) / 180 * Math.PI;
         windStr = parseFloat(windStrElem.value);
 
         // check for errors TODO
