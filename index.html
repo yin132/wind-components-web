@@ -9,10 +9,10 @@
     <link href="custom.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="overflow-y: hidden">
     <div class="container-fluid p-0 m-0">
         <main id="mainArea" class="p-0" style="margin: 0; transition: all 0.5s;">
-            <div class="container-fluid p-5 bg-primary text-white text-center">
+            <div class="container-fluid p-3 bg-primary text-white text-center">
                 <h1> Wind Components Calculator </h1>
             </div>
             
@@ -39,18 +39,20 @@
             
             <div class="container-fluid p-5 pt-1 mt-0">
                 <form>
-                    <div class="form-floating mb-3 pt-0 mt-0">
+                    <div class="form-floating mb-3">
                         <input id="runwayNum" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" aria-label="RunwayNumber">
                         <label for="runwayNum">Runway Number (eg. 19)</label>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="form-floating">
-                            <input id="windDir" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="210" aria-label="WindDirection">
+                        <div class="form-floating flex-grow-1">
+                            <input id="windDir" input type="number" pattern="[0-9]*" inputmode="numeric"
+                                style="border-bottom-right-radius: 0; border-top-right-radius: 0" class="form-control" placeholder="210" aria-label="WindDirection">
                             <label for="windDir">3-Digit Direction</label>
                         </div>
                         <span class="input-group-text">@</span>
-                        <div class="form-floating">
-                            <input id="windStr" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="5" aria-label="WindStrength">
+                        <div class="form-floating flex-grow-1" style="border-bottom-left-radius: 0; border-top-left-radius: 0">
+                            <input id="windStr" input type="number" pattern="[0-9]*" inputmode="numeric"
+                                style="border-bottom-left-radius: 0; border-top-left-radius: 0" class="form-control" placeholder="5" aria-label="WindStrength">
                             <label for="windStr">Wind Strength</label>
                         </div>
                     </div>
