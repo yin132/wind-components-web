@@ -17,35 +17,27 @@
             </div>
             
             <div class="container-fluid p-5 pb-0 mb-0">
-                <table class="table table-borderless">
+                <table class="table table-borderless" style="font-size: 24px" class="font-weight-bold">
                     <tr>
-                        <td style="padding: 10px">
-                            <p style="font-size: 18px" class="font-weight-bold;">
-                                Headwind
-                            </p>
+                        <td>
+                            Headwind
                         </td>
-                        <td style="padding: 10px">
-                            <p style="font-size: 18px" class="font-weight-bold;">
-                                Crosswind
-                            </p>
+                        <td>
+                            Crosswind
                         </td>
                     </tr>
                     <tr>
-                        <td id="headWind" style="padding: 10px">
-                            <p style="font-size: 18px" class="font-weight-bold;">
-                                0
-                            </p>
+                        <td id="headWind">
+                            0
                         </td>
-                        <td id="crossWind" style="padding: 10px">
-                            <p style="font-size: 18px" class="font-weight-bold;">
-                                0
-                            </p>
+                        <td id="crossWind">
+                            0
                         </td>
                     </tr>
                 </table>
             </div>
             
-            <div class="container-fluid p-5 pt-0 mt-0">
+            <div class="container-fluid p-5 pt-1 mt-0">
                 <form>
                     <div class="form-floating mb-3 pt-0 mt-0">
                         <input id="runwayNum" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" aria-label="RunwayNumber">
@@ -55,6 +47,7 @@
                         <input id="windDir" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="210" aria-label="WindDirection">
                         <span class="input-group-text">@</span>
                         <input id="windStr" input type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="5" aria-label="WindStrength">
+                        <span class="input-group-text">KT</span>
                     </div>
                     <div class="mb-3">
                         <p>
