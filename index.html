@@ -16,7 +16,7 @@
                 <h1> Wind Components Calculator </h1>
             </div>
             
-            <div class="container-fluid p-5">
+            <div class="container-fluid p-5 pb-0 mb-0">
                 <table class="table table-borderless">
                     <tr>
                         <td style="padding: 10px">
@@ -45,16 +45,21 @@
                 </table>
             </div>
             
-            <div class="container-fluid p-5">
+            <div class="container-fluid p-5 pt-0 mt-0">
                 <form>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3 pt-0 mt-0">
                         <span class="input-group-text">Runway Number</span>
-                        <input id="runwayNum" type="text" class="form-control" placeholder="19" aria-label="RunwayNumber">
+                        <input id="runwayNum" type="number" class="form-control" placeholder="19" aria-label="RunwayNumber">
                     </div>
                     <div class="input-group mb-3">
-                        <input id="windDir" type="text" class="form-control" placeholder="210" aria-label="WindDirection">
+                        <input id="windDir" type="number" class="form-control" placeholder="210" aria-label="WindDirection">
                         <span class="input-group-text">@</span>
-                        <input id="windStr" type="text" class="form-control" placeholder="5" aria-label="WindStrength">
+                        <input id="windStr" type="number" class="form-control" placeholder="5" aria-label="WindStrength">
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            input a 2 digit runway number and 3 digit wind direction
+                        </p>
                     </div>
                     <div class="mb-3">
                         <p id="inputWarning" style="color: #ff0000; visibility: hidden">
