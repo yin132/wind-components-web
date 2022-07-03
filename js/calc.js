@@ -33,9 +33,9 @@ function readWind() {
 
     // read inputs
     try {
-        runway = parseInt(runwayNumElem.value) * 10 / 180 * Math.PI;
-        windDir = parseInt(windDirElem.value) / 180 * Math.PI;
-        windStr = parseInt(windStrElem.value);
+        runway = parseFloat(runwayNumElem.value) * 10 / 180 * Math.PI;
+        windDir = parseFloat(windDirElem.value) / 180 * Math.PI;
+        windStr = parseFloat(windStrElem.value);
 
         // check for errors TODO
 
@@ -55,7 +55,7 @@ function readWind() {
     headWindElem.innerHTML = hwind;
     crossWindElem.innerHTML = xwind;
     inputWarning.style = "color: #ff0000; visibility: hidden";
-    
+
     if (hwind > 25 || hwind < -5) {
         headWindElem.style = "border: 2px; border-style: solid; border-color: red;";
     } else {
